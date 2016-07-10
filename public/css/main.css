@@ -1,0 +1,232 @@
+* {
+    font-family: 'Bangers', cursive;
+}
+body {
+    background-color: #f2e0f6;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+}
+.header {
+    width: 100%;
+    height: 450px;
+    background-color: #fff910;
+}
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #61b6f5;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding: 9px 0 0 0;
+    letter-spacing: 0.05em;
+}
+nav {
+    float: right;
+    margin: 40px 20px;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+
+}
+nav a:hover {
+    color: white;
+    background-color: #61b6f5;
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+    clear: both;
+    padding-top: 70px;
+}
+h1 span {
+    padding: 10px 40px;
+    border: 10px solid #61b6f5;
+    border-radius: 20px;
+    background-color: white;
+    display: inline-block;
+
+}
+.text {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+.who {
+    height: 400px;
+    background-color: #f24733;
+    padding-top: 35px;
+}
+.face {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url("../images/DSC03920.JPG");
+    background-position: center;
+    background-size: 130%;
+    clear: both;
+}
+.who p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: white;
+
+}
+.motivation {
+    text-align: center;
+    height: 300px;
+    background-color: #47f2e8;
+
+}
+.motivation h2 {
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+}
+.quotes {
+    font-size: 16px;
+
+}
+.quotes span {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #41bab0;
+}
+.contact {
+    height: 200px;
+    background-color: #16f94b;
+    text-align: center;
+}
+.contact h3 {
+    margin-top: 0;
+    font-size: 36px;
+    padding-top: 40px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+.contact a {
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+/*-------------------who-is section-----------------------*/
+
+.whois {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: #ed2ce0;
+}
+.headWhoIs {
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 100px auto 50px;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+}
+.goodwords {
+    letter-spacing: 0.1em;
+    font-size: 26px;
+    background-color: #fff;
+    margin: auto 20%;
+    padding: 2%;
+    border-radius: 25px;
+    border: 10px solid #61b6f5;
+}
+
+
+
+/*-------------------contact section-----------------------*/
+
+.contactForm {
+    width: 100%;
+    height: 500px;
+    background-color: #6d4bbb;
+}
+.contactForm h1 {
+    margin: 0 auto;
+    color: #fff;
+}
+
+/*------------------skills section------------------------*/
+.skills{
+    width: 100%;
+    height: 500px;
+    background-color: #428fed;
+}
+.skills h1 {
+    margin: 0 auto;
+}
+/*---------------------feedback form-----------------------*/
+form {
+    text-align: center;
+}
+form input[type=text] {
+    box-sizing: border-box;
+    width: 20%;
+    height: 36px;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 100px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+}
+form input[type=text]:focus{
+    border: none;
+    background-color: #fff9b1;
+    outline: solid orangered 2px ;
+
+}
+
+form textarea {
+    box-sizing: border-box;
+    width: 65%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    resize: none;
+}
+form input[type=submit]{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    box-shadow: 0 0 30px #47f2e8;
+}
+form input[type=submit]:hover{
+    box-shadow: 0 0 70px #ff5640;
+}
