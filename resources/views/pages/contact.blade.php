@@ -7,12 +7,12 @@
 
             <h1>Contact me by email</h1>
 
-            <form action="{{route('MainPage')}}">
+            <form action="{{route('FeedbackPage')}}">
                 <input type="text" placeholder="First Name" name="firstname">
                 <input type="text" placeholder="Last Name" name="lastname">
                 <input type="text" placeholder="Your email" name="email"><br>
                 <textarea name="textfeedback" rows="10" cols="20" placeholder="your mesage"></textarea><br>
-                <input type="submit" name="submit">
+                <input type="submit" name="submit" value="send">
             </form>
         </div>
     </div>

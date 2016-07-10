@@ -206,8 +206,7 @@ form input[type=text] {
 form input[type=text]:focus{
     border: none;
     background-color: #fff9b1;
-    outline: solid orangered 2px ;
-
+    outline: none;
 }
 
 form textarea {
@@ -219,14 +218,46 @@ form textarea {
     font-size: 16px;
     border: none;
     resize: none;
+    letter-spacing: 0.1em;
 }
-form input[type=submit]{
+form textarea:focus {
+    outline: none;
+}
+form input[type=submit] {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin: 20px;
-    box-shadow: 0 0 30px #47f2e8;
+    box-shadow: 0 0 10px #47f2e8;
+    background-color: #f3fdff;
+    border: none;
+    letter-spacing: 0.1em;
 }
-form input[type=submit]:hover{
+form input[type=submit]:focus {
+    outline: none;
+    background-color: #f1513c;
+}
+form input[type=submit]:hover {
     box-shadow: 0 0 70px #ff5640;
+    background-color: #ff5640;
+    color: white;
+}
+
+/*---------------------------feedback page----------------------------*/
+.feedback {
+    height: 500px;
+    text-align: center;
+    background-color: #6d4bbb;
+
+
+}
+
+.feedback div p {
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    margin: 200px 0;
+    color: white;
+
 }

@@ -18,3 +18,5 @@ Route::get('/who-is', 'WhoIsController@index')->name('WhoIsPage');
 Route::get('/skills', 'SkillsController@index')->name('SkillsPage');
 
 Route::get('/contact', 'ContactController@index')->name('ContactPage');
+
+Route::get('/feedback', 'FeedbackController@index')->name('FeedbackPage');
