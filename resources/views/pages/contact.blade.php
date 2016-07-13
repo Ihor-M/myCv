@@ -7,15 +7,17 @@
 
             <h1>Contact me by email</h1>
 
-            <form action="{{route('FeedbackPage')}}">
-                <input type="text" placeholder="First Name" name="firstname">
-                <input type="text" placeholder="Last Name" name="lastname">
-                <input type="text" placeholder="Your email" name="email"><br>
-                <textarea name="textfeedback" rows="10" cols="20" placeholder="your mesage"></textarea><br>
-                <input type="submit" name="submit" value="send">
-            </form>
+            {{ Form::open(['route' => 'FeedbackPage']) }}<br>
+            {{ Form::text('firstName', null, ['required','placeholder'=>'First Name']) }}
+            {{ Form::text('lastName', null,['required', 'placeholder'=>'Last Name']) }}
+            {{ Form::text('email', null, ['required', 'placeholder'=>'email']) }}
+            {{ Form::textarea('feedback', null, ['required', 'placeholder'=>'your message']) }} <br>
+            {{ Form::submit('submit', null, ['value'=>'send']) }}
+            {{ Form::close() }}
+
         </div>
     </div>
+
 
 
 @endsection

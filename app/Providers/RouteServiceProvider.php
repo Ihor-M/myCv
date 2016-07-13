@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Entity\Feedbacks;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -24,7 +25,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        //
+        $router -> model('Feedbacks', Feedbacks::class);
 
         parent::boot($router);
     }

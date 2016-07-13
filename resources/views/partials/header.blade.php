@@ -1,4 +1,3 @@
-
 <div class="container header">
     <div class="wrap">
         <div class="logo"><a href="{{route('MainPage')}}" class="logotext">IM</a></div>

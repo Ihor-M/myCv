@@ -13,10 +13,18 @@
 
 Route::get('/', 'MainController@index')->name('MainPage'); //додати нову сторінку
 
-Route::get('/who-is', 'WhoIsController@index')->name('WhoIsPage');
+Route::get('who-is', 'MainController@whoIsPage')->name('WhoIsPage');
 
-Route::get('/skills', 'SkillsController@index')->name('SkillsPage');
+Route::get('skills', 'MainController@skillsPage')->name('SkillsPage');
 
-Route::get('/contact', 'ContactController@index')->name('ContactPage');
+Route::get('contact', 'MainController@contactPage')->name('ContactPage');
 
-Route::get('/feedback', 'FeedbackController@index')->name('FeedbackPage');
+Route::post('feedback','MainController@feedbackPage')->name('FeedbackPage');
+
+Route::get('email-sent/{Feedbacks}', 'MainController@emailSent')->name('userEmailShow');
+
+
+
+
+
+
