@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Entity\Feedback;
 use App\Entity\Feedbacks;
 use App\Http\Requests\ContactFormRequest;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 
@@ -20,8 +18,6 @@ class MainController extends Controller
     }
 
     /**
-     * returning 'who is page'
-     * 
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function whoIsPage()
@@ -46,7 +42,8 @@ class MainController extends Controller
     }
 
     /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @param ContactFormRequest $request
+     * @return mixed
      */
     public function feedbackPage(ContactFormRequest $request)
     {
