@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'MainController@index')->name('MainPage'); //додати нову сторінку
+Route::get('/', 'MainController@index')->name('MainPage'); //add new page
 
 Route::get('who-is', 'MainController@whoIsPage')->name('WhoIsPage');
 

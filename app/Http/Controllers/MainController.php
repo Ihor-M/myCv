@@ -54,6 +54,7 @@ class MainController extends Controller
         ], function ($m) use ($feedback) {
             $m->from('user@mail.com');
             $m->to($feedback->email);
+            $m->subject('feedback');
         }
 
         );
